@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 결과 - 이모션캐슬</title>
+    <link rel="stylesheet" href="../css/common2.css">
+    <link rel="stylesheet" href="../css/search-results.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="playful-header">
+        <!-- Header content (same as main page) -->
+    </header>
+
+    <main class="search-results-page">
+        <div class="search-header">
+            <h1><span class="search-term">"레고"</span> 검색 결과</h1>
+            <div class="search-summary">
+                <span class="result-count">총 48개의 상품</span>
+            </div>
+        </div>
+
+        <div class="main-nav">
+            <div class="category-nav">
+                <button class="category-btn active">인기도순</button>
+                <button class="category-btn">최신등록순</button>
+                <button class="category-btn">낮은가격순</button>
+                <button class="category-btn">높은가격순</button>
+                <button class="category-btn">할인율순</button>
+                <button class="category-btn">누적판매순</button>
+                <button class="category-btn">리뷰많은순</button>
+                <button class="category-btn">평점높은순</button>
+            </div>
+            <div class="filter-container">
+                <button type="button" class="filter-btn" aria-label="필터">
+                    <i class="fas fa-sliders-h"></i>
+                </button>
+                
+                <div class="filter-sidebar">
+                    <div class="filter-sidebar-content">
+                        <div class="filter-header">
+                            <h3>필터</h3>
+                            <button type="button" class="close-filter">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        
+                        <h3>혜택정보</h3>
+                        <div class="filter-section">
+                            <button class="filter-chip">할인상품</button>
+                            <button class="filter-chip">무료배송</button>
+                            <button class="filter-chip">무료교환반품</button>
+                        </div>
+
+                        <h3>배송유형</h3>
+                        <div class="filter-section">
+                            <button class="filter-chip">오늘출발</button>
+                            <button class="filter-chip">최강일배송</button>
+                        </div>
+
+                        <h3>상품유형</h3>
+                        <div class="filter-section">
+                            <button class="filter-chip">예약구매</button>
+                        </div>
+
+                        <h3>가격대</h3>
+                        <div class="filter-section price-range">
+                            <div class="price-inputs">
+                                <input type="number" placeholder="12,900" min="0">
+                                <span>~</span>
+                                <input type="number" placeholder="69,900" min="0">
+                                <button class="apply-price">적용</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-actions">
+                            <button class="reset-btn">초기화</button>
+                            <button class="apply-btn">20개의 상품보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-results-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../images/product1.jpg" alt="위시켓 아이넘 가방하우스">
+                    <button class="wish-button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="product-badge">쿠폰배송</div>
+                    <h3 class="product-title">위시켓 아이넘 가방하우스</h3>
+                    <div class="product-price">
+                        <span class="discount">20%</span>
+                        <span class="price">43,900원</span>
+                        <span class="original-price">55,000원</span>
+                    </div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">리뷰 14</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 추가 상품 카드들 (비슷한 구조로 반복) -->
+        </div>
+
+        <div class="pagination">
+            <button class="prev-page" disabled>
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="page-numbers">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+            </div>
+            <button class="next-page">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <script src="../js/common2.js"></script>
+    <script src="../js/search-results.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+.signup-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 560px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo-placeholder {
+    height: 60px;
+    margin-bottom: 32px;
+    /* 로고 이미지 추가 시 사용 */
+}
+
+.signup-form h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* 입력 필드 공통 스타일 */
+input, select {
+    width: 100%;
+    height: 48px;
+    border: 1.5px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+/* 입력 가이드 텍스트 */
+.input-guide {
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+    display: block;
+    width: 100%;
+}
+
+.input-guide.error {
+    color: #dc3545;
+}
+
+/* 이메일 입력 그룹 */
+.email-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.email-group input[name="email"] {
+    flex: 1.2;
+}
+
+.email-group select {
+    flex: 1;
+}
+
+.email-group input[name="emailDomainInput"] {
+    flex: 1;
+}
+
+/* 휴대폰 번호 입력 그룹 */
+.phone-input-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.phone-input-group input {
+    flex: 1;
+    text-align: center;
+}
+
+.phone-input-group span {
+    color: #666;
+}
+
+.btn-verify {
+    min-width: 100px;
+    height: 48px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-verify:hover {
+    background: #0056b3;
+}
+
+/* 생년월일 입력 그룹 */
+.birth-input-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.birth-input-group input {
+    flex: 1;
+    text-align: center;
+}
+
+.birth-input-group span {
+    color: #666;
+}
+
+/* 약관 동의 섹션 */
+.agreement-section {
+    margin: 32px 0;
+    padding: 24px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.agreement-all {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.agreement-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.agreement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.agreement-item .checkbox-wrapper {
+    flex: 1;
+}
+
+.agreement-item .btn-view {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+}
+
+/* 체크박스 커스텀 스타일 */
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.label-text {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 약관 보기 버튼 */
+.btn-view {
+    padding: 6px 12px;
+    background: transparent;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-view:hover {
+    background: #f8f9fa;
+}
+
+/* 가입하기 버튼 */
+.btn-signup {
+    width: 100%;
+    height: 52px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 32px;
+}
+
+.btn-signup:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+/* 로그인 링크 */
+.login-link {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.modal-body {
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.btn-confirm {
+    padding: 8px 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.terms-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.terms-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.terms-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.terms-content li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .signup-container {
+        padding: 24px;
+        margin: 16px;
+    }
+    
+    .email-group, .phone-input-group, .birth-input-group {
+        flex-wrap: wrap;
+    }
+    
+    .email-group input[name="email"],
+    .email-group select,
+    .email-group input[name="emailDomainInput"] {
+        flex: 100%;
+    }
+    
+    .btn-verify {
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    .modal-content {
+        margin: 20px;
+        width: auto;
+    }
+} 

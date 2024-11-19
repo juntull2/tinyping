@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레고 듀플로 동물원 세트 - 이모션캐슬</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+</head>
+<body>
+    <header class="playful-header">
+        <!-- Header content (same as main page) -->
+    </header>
+
+    <main class="product-detail-page">
+        <!-- 상품 기본 정보 섹션 -->
+        <section class="product-basic-info">
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="../img/products/product1.jpg" alt="레고 듀플로 동물원 세트">
+                </div>
+                <div class="thumbnail-list">
+                    <button class="thumbnail active">
+                        <img src="../img/products/product1.jpg" alt="메인 이미지">
+                    </button>
+                    <button class="thumbnail">
+                        <img src="../img/products/product1-2.jpg" alt="상세 이미지 1">
+                    </button>
+                    <button class="thumbnail">
+                        <img src="../img/products/product1-3.jpg" alt="상세 이미지 2">
+                    </button>
+                    <button class="thumbnail">
+                        <img src="../img/products/product1-4.jpg" alt="상세 이미지 3">
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-header">
+                    <span class="brand">레고</span>
+                    <h1>듀플로 동물원 세트</h1>
+                    <div class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="review-count">(123)</span>
+                    </div>
+                </div>
+
+                <div class="product-price">
+                    <div class="discount-rate">20%</div>
+                    <div class="price-info">
+                        <span class="original-price">49,000원</span>
+                        <span class="final-price">39,200원</span>
+                    </div>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="info-row">
+                        <span class="label">배송방법</span>
+                        <span class="value">택배배송</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">배송비</span>
+                        <span class="value">무료배송</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">출고정보</span>
+                        <span class="value">오후 2시 이전 주문시 당일출고</span>
+                    </div>
+                </div>
+
+                <div class="option-selection">
+                    <select class="product-option">
+                        <option value="">옵션을 선택하세요</option>
+                        <option value="basic">기본세트</option>
+                        <option value="deluxe">디럭스세트 (+10,000원)</option>
+                        <option value="premium">프리미엄세트 (+20,000원)</option>
+                    </select>
+
+                    <div class="selected-options">
+                        <!-- Selected options will be added here via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="total-price">
+                    <span>총 상품금액</span>
+                    <span class="total">39,200원</span>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="like-button">
+                        <i class="fas fa-heart"></i>
+                        <span>찜하기</span>
+                    </button>
+                    <button class="cart-button">장바구니</button>
+                    <button class="buy-button">바로구매</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 상품 상세 정보 탭 섹션 -->
+        <section class="product-detail-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="detail">상품상세</button>
+                <button class="tab-button" data-tab="review">상품후기 (123)</button>
+                <button class="tab-button" data-tab="qna">상품문의 (45)</button>
+                <button class="tab-button" data-tab="delivery">배송/교환/반품</button>
+            </div>
+
+            <div class="tab-content active" id="detail">
+                <div class="product-description">
+                    <img src="../img/products/product1-detail.jpg" alt="상품 상세 설명">
+                    <!-- Additional product details -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="review">
+                <div class="review-summary">
+                    <div class="rating-average">
+                        <h3>사용자 총 평점</h3>
+                        <div class="big-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="average-score">4.8/5.0</div>
+                    </div>
+                    <div class="rating-breakdown">
+                        <div class="rating-bar">
+                            <span>5점</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 80%"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                        <!-- More rating bars -->
+                    </div>
+                </div>
+
+                <div class="review-list">
+                    <!-- Review items -->
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviewer">김**</span>
+                            <span class="review-date">2024.03.15</span>
+                        </div>
+                        <div class="review-content">
+                            <p>아이가 너무 좋아해요. 조립하면서 동물들을 알아가는 재미가 있네요.</p>
+                            <div class="review-images">
+                                <img src="../img/reviews/review1.jpg" alt="구매 후기 이미지">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="qna">
+                <div class="qna-header">
+                    <h3>상품 문의</h3>
+                    <button class="write-qna">문의하기</button>
+                </div>
+                <div class="qna-list">
+                    <!-- Q&A items -->
+                    <div class="qna-item">
+                        <div class="question">
+                            <span class="q-badge">Q</span>
+                            <div class="q-content">
+                                <div class="q-header">
+                                    <span class="q-title">배송 관련 문의</span>
+                                    <span class="q-author">박**</span>
+                                    <span class="q-date">2024.03.14</span>
+                                </div>
+                                <p>제주도 배송도 가능한가요?</p>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <span class="a-badge">A</span>
+                            <div class="a-content">
+                                <div class="a-header">
+                                    <span class="a-author">이모션캐슬</span>
+                                    <span class="a-date">2024.03.14</span>
+                                </div>
+                                <p>제주도 배송은 추가 배송비 3,000원이 발생합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="delivery">
+                <div class="delivery-policy">
+                    <h3>배송 안내</h3>
+                    <table class="policy-table">
+                        <tr>
+                            <th>배송방법</th>
+                            <td>택배배송</td>
+                        </tr>
+                        <tr>
+                            <th>배송사</th>
+                            <td>CJ대한통운</td>
+                        </tr>
+                        <tr>
+                            <th>배송비</th>
+                            <td>무료배송 (제주도/도서산간 추가비용 발생)</td>
+                        </tr>
+                        <tr>
+                            <th>배송기간</th>
+                            <td>오후 2시 이전 주문시 당일출고 (영업일 기준)</td>
+                        </tr>
+                    </table>
+
+                    <h3>교환/반품 안내</h3>
+                    <table class="policy-table">
+                        <tr>
+                            <th>교환/반품 기간</th>
+                            <td>상품 수령 후 7일 이내</td>
+                        </tr>
+                        <tr>
+                            <th>교환/반품 비용</th>
+                            <td>무료 (단순변심의 경우 고객부담)</td>
+                        </tr>
+                        <tr>
+                            <th>교환/반품 불가사유</th>
+                            <td>
+                                - 포장 개봉 후 사용한 경우<br>
+                                - 고객의 책임으로 상품이 훼손된 경우<br>
+                                - 고객의 사용으로 상품의 가치가 현저히 감소한 경우
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연관 상품 섹션 -->
+        <section class="related-products">
+            <h2>연관 상품</h2>
+            <div class="product-grid">
+                <!-- Related product cards -->
+                <div class="product-card">
+                    <img src="../img/products/related1.jpg" alt="관련 상품 1">
+                    <div class="product-info">
+                        <span class="brand">레고</span>
+                        <h3>듀플로 기차 세트</h3>
+                        <p class="price">45,000원</p>
+                    </div>
+                </div>
+                <!-- More related products -->
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/product-detail.js"></script>
+</body>
+</html>

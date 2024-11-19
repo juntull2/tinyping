@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 - 이모션캐슬</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mypage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+</head>
+<body>
+    <header class="playful-header">
+        <!-- Header content (same as main page) -->
+    </header>
+
+    <main class="mypage">
+        <div class="mypage-header">
+            <div class="user-summary">
+                <div class="user-info">
+                    <h1>안녕하세요, 김토이님!</h1>
+                    <p class="user-level">VIP 회원</p>
+                </div>
+                <div class="user-points">
+                    <div class="point-item">
+                        <span class="label">포인트</span>
+                        <span class="value">2,500P</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="label">쿠폰</span>
+                        <span class="value">3장</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mypage-content">
+            <aside class="sidebar">
+                <nav class="mypage-nav">
+                    <div class="nav-group">
+                        <h3>쇼핑 정보</h3>
+                        <ul>
+                            <li><a href="#orders" class="active">주문/배송</a></li>
+                            <li><a href="#cart">장바구니</a></li>
+                            <li><a href="#wishlist">찜한 상품</a></li>
+                            <li><a href="#reviews">상품후기</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-group">
+                        <h3>회원 정보</h3>
+                        <ul>
+                            <li><a href="#profile">회원정보 수정</a></li>
+                            <li><a href="#address">배송지 관리</a></li>
+                            <li><a href="#points">포인트</a></li>
+                            <li><a href="#coupons">쿠폰</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-group">
+                        <h3>고객센터</h3>
+                        <ul>
+                            <li><a href="#inquiries">1:1 문의</a></li>
+                            <li><a href="#notices">공지사항</a></li>
+                            <li><a href="#faq">자주 묻는 질문</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <div class="main-content">
+                <section id="orders" class="content-section">
+                    <h2>주문/배송 조회</h2>
+                    
+                    <div class="order-status">
+                        <div class="status-item">
+                            <div class="status-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <span class="status-label">결제완료</span>
+                            <span class="status-count">2</span>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <span class="status-label">상품준비중</span>
+                            <span class="status-count">1</span>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <span class="status-label">배송중</span>
+                            <span class="status-count">1</span>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <span class="status-label">배송완료</span>
+                            <span class="status-count">3</span>
+                        </div>
+                    </div>
+
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-header">
+                                <div class="order-date">2024.03.15</div>
+                                <div class="order-number">주문번호: 2024031501</div>
+                                <button class="order-detail">주문상세</button>
+                            </div>
+                            <div class="order-product">
+                                <img src="../img/products/product1.jpg" alt="레고 듀플로">
+                                <div class="product-info">
+                                    <h3>레고 듀플로 동물원 세트</h3>
+                                    <p class="option">옵션: 기본세트</p>
+                                    <p class="price">39,200원 / 1개</p>
+                                </div>
+                                <div class="order-status">
+                                    <span class="status">배송완료</span>
+                                    <div class="action-buttons">
+                                        <button>배송조회</button>
+                                        <button>구매후기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/mypage.js"></script>
+</body>
+</html>
