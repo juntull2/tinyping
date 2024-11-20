@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이모션캐슬 - 즐거움이 가득한 키즈샵</title>
+    <link rel="stylesheet" href="../css/common2.css">
+    <link rel="stylesheet" href="../css/popup.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+</head>
+<body>
+    <!-- 팝업 추가 (body 시작 부분에 추가) -->
+    <div class="popup-overlay" id="mainPopup">
+        <div class="popup">
+            <div class="popup-content">
+                <img src="../대대대/존잘혁2.png" alt="이벤트 배너">
+                <div class="popup-text">
+                    <h3>🎉 신규 회원 가입 이벤트</h3>
+                    <p>지금 회원 가입하시면<br>
+                    <strong>5,000원 할인쿠폰</strong>을 드려요!</p>
+                    <span class="event-date">2024.03.01 - 2024.03.31</span>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <label class="today-close">
+                    <input type="checkbox" id="todayCloseCheck">
+                    <span>오늘 하루 보지 않기</span>
+                </label>
+                <button class="popup-close">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="playful-header">
+        <div class="header-main">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="logo.png" alt="이모션캐슬" class="logo">
+                    </a>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="search-dropdown">
+                        <div class="recent-searches">
+                            <h3>최근 검색어</h3>
+                            <ul>
+                                <li>레고<button class="delete-search"><i class="fas fa-times"></i></button></li>
+                                <li>실바니안<button class="delete-search"><i class="fas fa-times"></i></button></li>
+                                <li>뽀로로<button class="delete-search"><i class="fas fa-times"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="popular-searches">
+                            <h3>인기 검색어</h3>
+                            <ul>
+                                <li><span class="rank">1</span>레고</li>
+                                <li><span class="rank">2</span>실바니안</li>
+                                <li><span class="rank">3</span>뽀로로</li>
+                                <li><span class="rank">4</span>다이노</li>
+                                <li><span class="rank">5</span>미니특공대</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="bubble-nav">
+                    <a href="#" class="bubble rainbow" data-modal="new-modal">NEW</a>
+                    <a href="#" class="bubble star" data-modal="best-modal">BEST</a>
+                    <a href="./search-results.html" class="bubble">토이/인형</a>
+                    <a href="./search-results.html" class="bubble">교육/블록</a>
+                    <a href="./search-results.html" class="bubble">캐릭터샵</a>
+                    <a href="./search-results.html" class="bubble">키즈패션</a>
+                    <a href="#" class="bubble sale" data-modal="sale-modal">EVENT</a>
+                </nav>
+
+                <div class="user-menu">
+                    <a href="./login.html"><i class="fas fa-user"></i> 로그인</a>
+                    <a href="./signup.html"><i class="fas fa-heart"></i>회원가입</a>
+                    <a href="./mypage.html"><i class="fas fa-shopping-cart"></i>마이페이지</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide clone">
+                        <img src="../img/티니핑_배너3.jpg" alt="프로모션 3">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/티니핑_배너1.jpg" alt="프로모션 1">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/티니핑_배너2.jpg" alt="프로모션 2">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/티니핑_배너3.jpg" alt="프로모션 3">
+                    </div>
+                    <div class="slide clone">
+                        <img src="../img/티니핑_배너1.jpg" alt="프로모션 1">
+                    </div>
+                </div>
+                
+                <button class="slider-button prev" aria-label="이전 슬라이드">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-button next" aria-label="다음 슬라이드">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="slider-pagination">
+                    <button class="pagination-dot active" data-index="0" aria-label="첫 번째 슬라이드"></button>
+                    <button class="pagination-dot" data-index="1" aria-label="두 번째 슬라이드"></button>
+                    <button class="pagination-dot" data-index="2" aria-label="세 번째 슬라이드"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gift-recommendations">
+            <h2>선물 고민 해결</h2>
+            <div class="gift-content">
+                <!-- 왼쪽 순위 목록 -->
+                <div class="ranking-list">
+                    <div class="rank-item">
+                        <span class="rank-number">1</span>
+                        <span class="rank-text">[시우맘X팸썰] 강아지와 고양이 필딩 블록</span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">2</span>
+                        <span class="rank-text">[시우맘X팸썰] 강아지와 고양이 필딩 블록</span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">3</span>
+                        <span class="rank-text">[시우맘X팸썰] 강아지와 고양이 필딩 블록</span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">4</span>
+                        <span class="rank-text">[시우맘X팸썰] 강아지와 고양이 필딩 블록</span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">5</span>
+                        <span class="rank-text">[시우맘X팸썰] 강아지와 고양이 필딩 블록</span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">6</span>
+                        <span class="rank-text">[시우맘X팸썰] 강아지와 고양이 필딩 블록</span>
+                    </div>
+                    <div class="rank-item active">
+                        <span class="rank-number">7</span>
+                        <span class="rank-text">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</span>
+                        <span class="rank-arrow">></span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">8</span>
+                        <span class="rank-text">[보쉬토이_공식]- 보쉬 공구놀이 원목세트</span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">9</span>
+                        <span class="rank-text">[시우맘X팸썰] 알파벳 사운드퍼즐_NEW</span>
+                    </div>
+                    <div class="rank-item">
+                        <span class="rank-number">10</span>
+                        <span class="rank-text">[시우맘X팸썰] 팜 월드 스타터세트</span>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 상품 상세 -->
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./img/티니핑_배너사진.PNG" alt="무비 범즈 팝콘 프리실라 인형" class="product-image">
+                    <div class="product-info">
+                        <h3 class="brand">범벅즈</h3>
+                        <h4 class="product-name">[시우맘X범벅즈] 무비 범즈 팝콘 프리실라 인형 미듐(M)</h4>
+                        <p class="price">18,000원</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-highlights">
+            <h2 class="section-title">브랜드 PICK</h2>
+            <div class="brand-layout">
+                <!-- 왼쪽 메뉴 영역 -->
+                <div class="brand-menu">
+                    <div class="menu-category">
+                        <h3>BRAND</h3>
+                        <ul>
+                            <li><a href="#" data-brand="silvanian">실바니안 패밀리</a></li>
+                            <li><a href="#" data-brand="bread">브레드이발소</a></li>
+                            <li><a href="#" data-brand="casekids">케이스키즈</a></li>
+                            <li><a href="#" data-brand="dualic">듀얼릭</a></li>
+                            <li><a href="#" data-brand="pororo">뽀로로</a></li>
+                            <li><a href="#" data-brand="waz">와즈</a></li>
+                            <li><a href="#" data-brand="onedream">원드림</a></li>
+                            <li><a href="#" data-brand="sciencebox">과학상자</a></li>
+                            <li><a href="#" data-brand="boardgame">보드게임</a></li>
+                            <li><a href="#" data-brand="aquabeads">아쿠아비즈</a></li>
+                            <li><a href="#" data-brand="miniforce">미니특공대</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 상품 그리드 영역 -->
+                <div class="brand-products">
+                    <div class="product-grid" data-brand="silvanian">
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/300x200" alt="실바니안 패밀리 하우스">
+                            <div class="product-info">
+                                <h3>실바니안 패밀리 하우스</h3>
+                                <p class="price">89,000원</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/300x200" alt="실바니안 패밀리 자동차">
+                            <div class="product-info">
+                                <h3>실바니안 패밀리 자동차</h3>
+                                <p class="price">45,000원</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/300x200" alt="실바니안 패밀리 자동차">
+                            <div class="product-info">
+                                <h3>실바니안 패밀리 자동차</h3>
+                                <p class="price">45,000원</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/300x200" alt="실바니안 패밀리 자동차">
+                            <div class="product-info">
+                                <h3>실바니안 패밀리 자동차</h3>
+                                <p class="price">45,000원</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/300x200" alt="실바니안 패밀리 자동차">
+                            <div class="product-info">
+                                <h3>실바니안 패밀리 자동차</h3>
+                                <p class="price">45,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="best-sellers">
+            <h2><span class="highlight">BEST</span> SELLERS</h2>
+            <div class="category-tabs">
+                <button class="category-tab active">전체</button>
+                <button class="category-tab">신생아</button>
+                <button class="category-tab">교육완구</button>
+                <button class="category-tab">캐릭터</button>
+            </div>
+            <div class="product-grid">
+                <!-- 베스트셀러 상품 1 -->
+                <div class="product-card">
+                    <div class="product-badge">BEST 1</div>
+                    <div class="product-image">
+                        <img src="./img/best/product1.jpg" alt="레고 듀플로 동물원">
+                        <div class="hover-buttons">
+                            <button><i class="fas fa-cart-plus"></i></button>
+                            <button><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">레고</span>
+                        <h3>듀플로 동물원 세트</h3>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(123)</span>
+                        </div>
+                        <p class="price">
+                            <span class="discount">20%</span>
+                            <span class="original">49,000원</span>
+                            <span class="final">39,200원</span>
+                        </p>
+                        <div class="tags">
+                            <span class="tag-best">BEST</span>
+                            <span class="tag-free-shipping">무료배송</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 베스트셀러 상품 2 -->
+                <div class="product-card">
+                    <div class="product-badge">BEST 2</div>
+                    <div class="product-image">
+                        <img src="./img/best/product2.jpg" alt="실바니안 패밀리 하우스">
+                        <div class="hover-buttons">
+                            <button><i class="fas fa-cart-plus"></i></button>
+                            <button><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">실바니안</span>
+                        <h3>패밀리 하우스 세트</h3>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(98)</span>
+                        </div>
+                        <p class="price">
+                            <span class="discount">15%</span>
+                            <span class="original">89,000원</span>
+                            <span class="final">75,650원</span>
+                        </p>
+                        <div class="tags">
+                            <span class="tag-best">BEST</span>
+                            <span class="tag-free-shipping">무료배송</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 베스트셀러 상품 3 -->
+                <div class="product-card">
+                    <div class="product-badge">BEST 3</div>
+                    <div class="product-image">
+                        <img src="./img/best/product3.jpg" alt="뽀로로 말하는 폰">
+                        <div class="hover-buttons">
+                            <button><i class="fas fa-cart-plus"></i></button>
+                            <button><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">뽀로로</span>
+                        <h3>말하는 스마트폰</h3>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(78)</span>
+                        </div>
+                        <p class="price">
+                            <span class="discount">25%</span>
+                            <span class="original">39,900원</span>
+                            <span class="final">29,925원</span>
+                        </p>
+                        <div class="tags">
+                            <span class="tag-best">BEST</span>
+                            <span class="tag-free-shipping">무료배송</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 베스트셀러 상품 4 -->
+                <div class="product-card">
+                    <div class="product-badge">BEST 4</div>
+                    <div class="product-image">
+                        <img src="./img/best/product4.jpg" alt="피셔프라이스 아기체육관">
+                        <div class="hover-buttons">
+                            <button><i class="fas fa-cart-plus"></i></button>
+                            <button><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">피셔프라이스</span>
+                        <h3>디럭스 아기체육관</h3>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(156)</span>
+                        </div>
+                        <p class="price">
+                            <span class="discount">30%</span>
+                            <span class="original">129,000원</span>
+                            <span class="final">90,300원</span>
+                        </p>
+                        <div class="tags">
+                            <span class="tag-best">BEST</span>
+                            <span class="tag-free-shipping">무료배송</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-review">
+            <h2 class="section-title">#BEST REVIEW</h2>
+            
+            <div class="review-slider-container">
+                <button class="slider-arrow prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="review-grid">
+                    <!-- 첫 번째 페이지 리뷰들 -->
+                    <div class="review-card">
+                        <div class="product-image">
+                            <img src="./img/reviews/review1.jpg" alt="슈퍼다이노 브라키오 크레인">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.97</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="product-name">슈퍼다이노 브라키오 크레인</h3>
+                            <p class="review-text">최고! 아들이 너무 좋아하는 상품이에요 ♬</p>
+                            <div class="review-meta">
+                                <span class="reviewer">cg****</span>
+                                <span class="date">24.11.11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="product-image">
+                            <img src="./img/reviews/review2.jpg" alt="레고 듀플로 동물원">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.95</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="product-name">레고 듀플로 동물원</h3>
+                            <p class="review-text">아이가 동물들과 놀기 좋아해요. 퀄리티도 좋네요!</p>
+                            <div class="review-meta">
+                                <span class="reviewer">happy***</span>
+                                <span class="date">24.11.10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="product-image">
+                            <img src="./img/reviews/review3.jpg" alt="뽀로로 말하는 폰">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.92</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="product-name">뽀로로 말하는 폰</h3>
+                            <p class="review-text">소리도 적당하고 배터리도 오래가요!</p>
+                            <div class="review-meta">
+                                <span class="reviewer">pororo**</span>
+                                <span class="date">24.11.09</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 두 번째 페이지 리뷰들 -->
+                    <div class="review-card">
+                        <div class="product-image">
+                            <img src="./img/reviews/review4.jpg" alt="피셔프라이스 아기체육관">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.89</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="product-name">피셔프라이스 아기체육관</h3>
+                            <p class="review-text">아기가 좋아해요! 색감도 너무 예쁘네요</p>
+                            <div class="review-meta">
+                                <span class="reviewer">baby***</span>
+                                <span class="date">24.11.08</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="product-image">
+                            <img src="./img/reviews/review5.jpg" alt="실바니안 패밀리하우스">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.88</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="product-name">실바니안 패밀리하우스</h3>
+                            <p class="review-text">디테일이 살아있어요. 딸아이가 너무 좋아해요!</p>
+                            <div class="review-meta">
+                                <span class="reviewer">sylvan**</span>
+                                <span class="date">24.11.07</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="product-image">
+                            <img src="./img/reviews/review6.jpg" alt="브레드이발소 세트">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.87</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="product-name">브레드이발소 세트</h3>
+                            <p class="review-text">역할놀이하기 너무 좋아요. 추천합니다!</p>
+                            <div class="review-meta">
+                                <span class="reviewer">bread**</span>
+                                <span class="date">24.11.06</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>고객센터</h4>
+                <p class="cs-number">1544-0000</p>
+                <p>평일 10:00 - 17:00</p>
+                <p>점심 12:00 - 13:00</p>
+                <button class="kakao-chat">
+                    <i class="fas fa-comment"></i> 카카오톡 상담하기
+                </button>
+            </div>
+            <div class="footer-section">
+                <h4>이모션캐슬</h4>
+                <p>회사소개</p>
+                <p>이용약관</p>
+                <p>개인정보처리방침</p>
+            </div>
+            <div class="footer-section">
+                <h4>SNS</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>안전거래</h4>
+                <div class="security-marks">
+                    // ... security certification marks ...
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 모달 구조 추가 -->
+    <div class="modal" id="new-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>신상품 모음</h2>
+            <div class="modal-categories">
+                <button class="modal-category active">전체</button>
+                <button class="modal-category" onclick="location.href='category.html'">토이/인형</button>
+                <button class="modal-category">교육/블록</button>
+                <button class="modal-category">캐릭터샵</button>
+            </div>
+            <div class="modal-grid">
+                <!-- 상품 카드 반복 -->
+                <div class="modal-product-card">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-image">
+                        <div class="product-img-placeholder"></div>
+                        <div class="hover-buttons">
+                            <button><i class="fas fa-cart-plus"></i></button>
+                            <button><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="brand">브랜드명</span>
+                        <h3>상품명</h3>
+                        <p class="price">
+                            <span class="discount">20%</span>
+                            <span class="final">39,200원</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/common2.js"></script>
+    <script src="../js/popup.js"></script>
+    <button id="topButton" class="top-button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>

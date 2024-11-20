@@ -1,0 +1,241 @@
+.checkout-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+}
+
+.checkout-page h1 {
+    grid-column: 1 / -1;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Order Items */
+.order-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.order-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-details h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.item-details p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.item-details .price {
+    font-weight: 700;
+    color: #ff6b6b;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+.address-inputs {
+    display: grid;
+    gap: 10px;
+}
+
+.find-address {
+    width: fit-content;
+    padding: 12px 20px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Discount/Point Section */
+.coupon-select,
+.point-input {
+    display: flex;
+    gap: 10px;
+}
+
+.apply-coupon,
+.use-all-points {
+    padding: 12px 20px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.available-points {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Payment Method */
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-select {
+    display: flex;
+    gap: 10px;
+}
+
+.card-select select {
+    flex: 1;
+}
+
+/* Payment Summary */
+.payment-summary {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.total-payment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.agreement {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agreement label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.agreement label:first-child {
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.proceed-payment {
+    width: 100%;
+    padding: 18px;
+    margin-top: 20px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.proceed-payment:hover {
+    background: #ff5252;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .checkout-page {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-summary {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-select {
+        flex-direction: column;
+    }
+}

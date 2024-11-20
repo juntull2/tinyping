@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니 - 이모션캐슬</title>
+    <link rel="stylesheet" href="../css/common2.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+</head>
+<body>
+    <header class="playful-header">
+        <!-- Header content (same as main page) -->
+    </header>
+
+    <main class="cart-page">
+        <h1>장바구니</h1>
+        
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-header">
+                    <label class="select-all">
+                        <input type="checkbox" id="selectAll">
+                        <span>전체선택</span>
+                    </label>
+                    <button class="delete-selected">선택삭제</button>
+                </div>
+
+                <div class="cart-list">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="item-select">
+                            <input type="checkbox" class="item-checkbox">
+                        </div>
+                        <div class="item-image">
+                            <img src="../img/products/product1.jpg" alt="레고 듀플로">
+                        </div>
+                        <div class="item-info">
+                            <h3>레고 듀플로 동물원 세트</h3>
+                            <p class="item-option">옵션: 기본세트</p>
+                            <div class="quantity-control">
+                                <button class="decrease">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <p class="original-price">49,000원</p>
+                            <p class="final-price">39,200원</p>
+                        </div>
+                        <button class="remove-item">&times;</button>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="item-select">
+                            <input type="checkbox" class="item-checkbox">
+                        </div>
+                        <div class="item-image">
+                            <img src="../img/products/product2.jpg" alt="실바니안">
+                        </div>
+                        <div class="item-info">
+                            <h3>실바니안 패밀리 하우스</h3>
+                            <p class="item-option">옵션: 풀세트</p>
+                            <div class="quantity-control">
+                                <button class="decrease">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <p class="original-price">89,000원</p>
+                            <p class="final-price">75,650원</p>
+                        </div>
+                        <button class="remove-item">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>주문 요약</h2>
+                <div class="summary-item">
+                    <span>상품금액</span>
+                    <span>138,000원</span>
+                </div>
+                <div class="summary-item">
+                    <span>할인금액</span>
+                    <span>-23,150원</span>
+                </div>
+                <div class="summary-item">
+                    <span>배송비</span>
+                    <span>무료</span>
+                </div>
+                <div class="summary-total">
+                    <span>결제예정금액</span>
+                    <span>114,850원</span>
+                </div>
+                <button class="checkout-button">구매하기</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>

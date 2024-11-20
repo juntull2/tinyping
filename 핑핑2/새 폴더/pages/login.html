@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 이모션캐슬</title>
+    <link rel="stylesheet" href="../css/common2.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- 헤더는 동일 -->
+    <header class="playful-header">
+        <div class="header-main">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="logo.png" alt="이모션캐슬" class="logo">
+                    </a>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="search-dropdown">
+                        <div class="recent-searches">
+                            <h3>최근 검색어</h3>
+                            <ul>
+                                <li>레고<button class="delete-search"><i class="fas fa-times"></i></button></li>
+                                <li>실바니안<button class="delete-search"><i class="fas fa-times"></i></button></li>
+                                <li>뽀로로<button class="delete-search"><i class="fas fa-times"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="popular-searches">
+                            <h3>인기 검색어</h3>
+                            <ul>
+                                <li><span class="rank">1</span>레고</li>
+                                <li><span class="rank">2</span>실바니안</li>
+                                <li><span class="rank">3</span>뽀로로</li>
+                                <li><span class="rank">4</span>다이노</li>
+                                <li><span class="rank">5</span>미니특공대</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="bubble-nav">
+                    <a href="#" class="bubble rainbow" data-modal="new-modal">NEW</a>
+                    <a href="#" class="bubble star" data-modal="best-modal">BEST</a>
+                    <a href="#" class="bubble">토이/인형</a>
+                    <a href="#" class="bubble">교육/블록</a>
+                    <a href="#" class="bubble">캐릭터샵</a>
+                    <a href="#" class="bubble">키즈패션</a>
+                    <a href="#" class="bubble sale" data-modal="sale-modal">SALE</a>
+                </nav>
+
+                <div class="user-menu">
+                    <a href="#"><i class="fas fa-user"></i> 로그인</a>
+                    <a href="#"><i class="fas fa-heart"></i> 찜</a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> 장바구니</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 로그인 페이지 -->
+    <main class="login-page">
+        <div class="login-container">
+            <h2>로그인</h2>
+            <form class="login-form">
+                <div class="input-group">
+                    <input type="text" placeholder="아이디" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="비밀번호" required>
+                </div>
+                <div class="login-options">
+                    <label><input type="checkbox"> 아이디 저장</label>
+                    <div class="forgot-links">
+                        <a href="#">아이디 찾기</a>
+                        <span>|</span>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </div>
+                <button type="submit" class="login-btn">로그인</button>
+                <button type="button" class="register-btn">회원가입</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html> 
